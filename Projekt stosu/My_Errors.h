@@ -1,0 +1,21 @@
+#include "stdafx.h"
+
+#pragma once
+
+enum MY_ERROR {
+	MEM_ALLOC_ERROR = 0,
+	FILE_ALLOC_ERROR = 1,
+	NO_PRINT_FUN = 2,
+	NO_SAVE_FUN = 3,
+	NO_LOAD_FUN = 4,
+	NO_COMP_FUN = 5,
+	FATAL_ERROR_OF_MEMORY = 6,
+	NEW_ELEM_IS_NULL=7,
+	THERE_IS_NO_ANY_ELEM=8,
+	STACK_IS_LOADED=9,
+	NO_DEL_FUN=10,
+	NO_CP_ELEM=11,
+	TOTAL=12
+};
+
+void my_error(enum MY_ERROR pom);
